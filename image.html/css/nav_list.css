@@ -1,0 +1,48 @@
+.navcontainer
+{
+font-family: arial;
+font-weight: bold;
+background:#000080;
+position: absolute;
+right: 0px;
+margin: 0;
+padding: 10px;
+border: 0;
+}
+
+.navcontainer ul
+{
+display: inline;
+margin: 0;
+padding: 0;
+list-style: none;
+border: solid 1px #000080;
+}
+
+.navcontainer h2
+{
+border: solid 1px ";
+padding: 4px;
+text-align: center;
+}
+
+.navcontainer ul li
+{
+display: inline;
+margin: 0;
+}
+
+.navcontainer ul li a
+{
+color: #F5F5DC;
+background: #000080;
+margin: 0;
+padding: 2px 5px 2px 5px;
+text-decoration: none;
+}
+
+.navcontainer ul li a:hover
+{
+background: #ADD8E6;
+border-bottom: solid 9px #F5F5DC;
+}

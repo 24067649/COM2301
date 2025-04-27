@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+ 
+<HTML>
+
+                 <HEAD>
+
+                                        <TITLE>PROJECTS</TITLE>
+
+                  </HEAD>
+                 #025043
+
+
+                  <BODY STYLE=background-image:url('backdrop2.jpg')  >                
+
+<A HREF="PAGES/projects.html">Projects</A>
+                          <A HREF="file:///C:/Users/Matimba_Zinica/Desktop/image.html/firstwebpage.html">Go to the Home page</A>
+
+<H1><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ > 
+<B><i>PROJECTS</i></B></font></H1>
+
+<H3><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ > 
+<B>CODE 1-Arithmetic Operation</B></font></H3>
+
+
+
+<P><B><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ font size="4">Coding Language- Java <BR> This code allows a user to input a series of numbers and it performs simple arithmetic operations</font></B></P>
+
+<P><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ font size="4">
+
+<BR>  import java.util.Scanner;
+<BR> public class JavaApplication16 {
+ <BR>    public static void main(String[] args) {
+ <BR>   Scanner zee=new Scanner (System.in);
+   
+  <BR>  System.out.print("Enter first number:");
+  <BR>  double num1=zee.nextDouble();
+   
+  <BR>  System.out.print("Enter second number:");
+ <BR>   double num2=zee.nextDouble();
+   
+ <BR>   double add,subtract,divide,multiply,remainder;
+   
+  <BR>  add=num1+num2;
+ <BR>   System.out.println("sum is "+add);
+   
+<BR>    subtract=num1-num2;
+  <BR>  System.out.println("The difference is "+subtract);
+   
+  <BR>  divide=num1/num2;
+  <BR>  System.out.println("The division is "+divide);
+   
+   <BR> multiply=num1*num2;
+   <BR> System.out.println("the multiplication is "+multiply);
+   
+  <BR>  remainder=num1%num2;
+   <BR> System.out.println("the remainder is      "+remainder);
+   
+  
+<BR>    }
+
+<BR> }
+
+</font></P>
+
+<H3><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+> 
+<B>CODE 2-PALINDROME CHECK</B></font></H3>
+
+<P><B><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ font size="4">Coding Language- Java <BR>This code allows a user to input a word and the program checks if the word is spelt the same vice versa to confirm that it is a palindrome</font></B></P>
+
+<P><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ font size="4">
+package palindromecheck;
+
+<BR> import java.util.Scanner;
+<BR> public class Palindromecheck { 
+   <BR>  public static void main(String[] args) {
+       <BR>  Scanner zee=new Scanner (System.in);
+        
+        <BR> System.out.print("enter word  ");
+        <BR> String text=zee.next();
+        
+       <BR> String reversedtext = new StringBuilder(text).reverse().toString();
+       
+       <BR> if (text.equals(reversedtext)) {
+          <BR>  System.out.print("the word is a palindrome :" +text); }
+    <BR> else {
+                <BR>    System.out.print("the word is not a palindrome :" );
+                 <BR>   }
+           
+     <BR>   }
+   <BR>  }
+
+</font></P>
+
+
+<H3><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+> 
+<B>CODE 3-LEVEL PERFOMANCE CHECK</B></font></H3>
+
+
+<P><B><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+ font size="4">
+
+Coding Language- Java <BR>This code allows a user to input the percentage of their marks and determine what level they perfomed at</font></B></P>
+<P><font face="Geneva,Arial,Helvetical,sans-serif" color= #025043
+font size="4">
+
+  package levelperfomance;
+
+<BR>import java.util.Scanner;
+<BR>public class LevelPerfomance {
+   <BR> public static void main (String[] args) {
+    <BR>    Scanner zee=new Scanner (System.in);
+     <BR>   int marks = 0;
+     <BR>   int a= marks;
+    <BR>    //prompt user to add marks and the level of perfomance is shown
+       
+        
+  <BR>  System.out.print("Enter your marks :");
+   
+ <BR>       marks = zee.nextInt();
+<BR> {    
+  <BR>  if (29<= marks && marks>0) {
+  <BR>      System.out.print(" Level 1 : Novice");
+   <BR> }   
+    
+  <BR>   else if (marks <=39 && marks>=30 ) {
+  <BR>       System.out.print("Level 2: Developing") ;
+   <BR>      }
+        
+  <BR>       else if (marks<=49 && marks >=40) {
+   <BR>              System.out.print("Level 3 : Advanced");}
+      
+     <BR>    else if (marks<=59 && marks>=50)  {
+     <BR>        System.out.print("Level 4 : Moderate");
+   <BR>      }
+    
+    <BR>     else if (marks<=69 && marks>=60)  {
+     <BR>        System.out.print("Level 5 : Highly advanced");
+     <BR>    }
+    
+      <BR>   else if (marks<=79 && marks>70)   {
+      <BR>       System.out.print("Level 6 : Mastery");
+    <BR>     }
+    
+       <BR>  else if (marks<=100 && marks >=80) {
+       <BR>     System.out.print ("Level 7 : Boza Wenaaaaa!");
+            
+      <BR>   }
+   
+            
+            
+        
+    }
+    
+}
+}
+
+</font></P>
+
+      
+                      </BODY>
+</HTML>

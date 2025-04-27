@@ -1,0 +1,122 @@
+import java.util.Scanner;
+
+class FinancialPlanner {
+    public static double calculateTax (double grossIncome , double taxRate) {
+        importreturn grossIncome * (taxRate /100);
+    }
+    
+    public static double calculateExpenditures (double[]expenditures) {
+        double total = 0;
+        for (double expenditure : expenditures) {
+            total+= expenditure ;
+        }
+        return total;
+    }
+    
+    public static double calculateHomeLoan(double purchasePrice,double deposit ,double interestRate , int months){
+        double loanAmount = purchasePrice - deposit ; 
+        double monthlyInterestRate = interestRate / 100 /12;
+        return (loanAmount * monthlyInterestRate) / (1- Math.pow(1+monthlyInterestRate,-months));
+    }
+    
+    public static void main (String[]args){
+        Scanner zee = new Scanner (System.in);
+        
+        System.out.println("Personal financial planning and financial advisory services");
+        
+        //Input of the Gross Monthly Income (GMI)
+        System.out.print("Enter your gross monthly income:R");
+        double grossIncome = scanner.nextDouble();
+        
+        //Input of the income after tax deduction
+        System.out.print("Enter your tax rate(in %)");
+        double taxRate=scanner.nextDouble();
+        
+        double tax=calculateTax (grossIncome,taxRate);
+        double netIncome = grossIncome-tax;
+         
+        //Monthly expenditures
+        System.out.println("Examining your recurring expenditures(monthly)");
+        double []expenditures=new double [5];
+        
+        System.out.print("Enter cost of Groceries:R");
+        expenditures[0] =zee.nextDouble();
+        
+        System.out.print("Enter cost of water and electricity:R");
+        expenditures [1]=zee.nextDouble();
+        
+        System.out.print("Enter cost of travel(including petrol):R");
+        expenditures [2] =scanner.nextDouble();
+        
+        System.out.print("Enter cell phone and telephone cost:R");
+        expenditures[3]=zee.nextDouble();
+        
+        System.out.print ("Other expenditures:R");
+        expenditures [4]=zee.nextDouble();
+        
+        double Expenditures = calculateExpenditures(expenditures);
+        
+        
+        //Rent or purchase property option 
+        System.out.print("Do you plan to rent accomodation or purchase a property?");
+        
+        System.out.print ("Pick a number : 1.Rent 2.Purchase");
+        int number=zee.nextInt();
+        
+        
+        if (number==1) {
+            System.out.println("Enter the monthly rent amount:(R)");
+            double accommodationExpense = zee.nextDouble();
+        }  
+            else if (number==2) {
+                System.out.println("Enter the Home loan amount(R):");
+                double loanAmount=zee.nextDouble();
+                
+                System.out.print ("Enter the down payment amount(R):");
+                double downPayment=zee.nextDouble();
+                
+                System.out.print("Enter the interest rate (%) on the loan amout:");
+                double loanInterest=zee.nextDouble();
+                
+                System.out.print("Enter term of loan(months):");
+                int loanTerm=zee.nextInt();
+                
+            double accommodationExpense = calculateHomeLoan (loanAmount,downPayment,loanInterest,loanTerm);
+                
+            }
+     
+            else {
+                System.out.println ("Invalid option,pick valid option:");
+                return;
+                
+            }
+        
+        //Input of transportation
+     
+        
+        
+        
+        
+        
+        
+                
+                
+    }  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        }
+    }
+}
